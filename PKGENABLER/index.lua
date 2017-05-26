@@ -13,8 +13,8 @@ while true do
 	Screen.clear()
 	Graphics.debugPrint(5, 5, "PKGEnabler By SilicaAndPina!", white)
     Graphics.debugPrint(5, 25, "Which PKG Installer Mod Would You Like To Use?", white)
-    Graphics.debugPrint(5, 45, "X: DEX PKG INSTALLER (The PKG Installer you'd get on a TESTKIT PSV)", white)
-    Graphics.debugPrint(5, 65, "O: MAJOR_TOM PKG INSTALLER (The PKG Installer in IDU Mode)", white)
+    Graphics.debugPrint(5, 45, "X: DEX PKG INSTALLER (Recommended)", white)
+    Graphics.debugPrint(5, 65, "O: MAJOR_TOM PKG INSTALLER (Only use if you know what it is.)", white)
 	Graphics.termBlend()
 	Screen.flip()
 	
