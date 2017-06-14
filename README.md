@@ -3,7 +3,8 @@ Enables PKG Installer on 3.60 HENKAKU Vita's
 
 How to get PKG installer.
 1. Install the VPK
-2. Open the VPK, some text will go on screen for a few seconds then your vita will reboot
+2. Open the VPK, some text will go on screen for a few seconds then you can select what package installer you want.
+(DEX, TESTKIT, MAJOR_TOM) and the vita will reboot
 3. Package Installer is ready to use on your vita!
 
 
