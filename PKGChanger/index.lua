@@ -25,10 +25,11 @@ while true do
     else if Controls.check(Controls.read(), SCE_CTRL_CIRCLE) then
         System.extractZIP("app0:/pkgpatchMAJOR.zip", "vs0:/app/NPXS10031")
         System.launchEboot("app0:/reboot.bin")
-    else if Controls.check(Controls.read(), SCE_CTRL_TRIANGLE) then
+    else if Controls.check(Controls.read(), SCE_CTRL_SQUARE) then
         System.extractZIP("app0:/pkgpatchDEX.zip", "vs0:/app/NPXS10031")
         System.launchEboot("app0:/reboot.bin")
 	end
 	
+end
 end
 end
