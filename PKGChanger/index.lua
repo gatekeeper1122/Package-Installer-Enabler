@@ -11,18 +11,22 @@ while true do
 	
 	Graphics.initBlend()
 	Screen.clear()
-	Graphics.debugPrint(5, 5, "PKGChanger By SilicaAndPina!", white)
+	Graphics.debugPrint(5, 5, "PKGEnabler By SilicaAndPina!", white)
     Graphics.debugPrint(5, 25, "Which PKG Installer Mod Would You Like To Use?", white)
-    Graphics.debugPrint(5, 45, "X: DEX PKG INSTALLER (Recommended)", white)
-    Graphics.debugPrint(5, 65, "O: MAJOR_TOM PKG INSTALLER (Only use if you know what it is.)", white)
+    Graphics.debugPrint(5, 45, "X: TestKit PKG INSTALLER (Recommended)", white)
+    Graphics.debugPrint(5, 65, "[]: DevKit PKG INSTALLER", white)
+    Graphics.debugPrint(5, 85, "O: MAJOR_TOM PKG INSTALLER", white)
 	Graphics.termBlend()
 	Screen.flip()
 	
 	if Controls.check(Controls.read(), SCE_CTRL_CROSS) then
-        System.extractZIP("app0:/pkgpatchDEX.zip", "vs0:/app/NPXS10031")
+        System.extractZIP("app0:/pkgpatchTEL.zip", "vs0:/app/NPXS10031")
         System.launchEboot("app0:/reboot.bin")
     else if Controls.check(Controls.read(), SCE_CTRL_CIRCLE) then
         System.extractZIP("app0:/pkgpatchMAJOR.zip", "vs0:/app/NPXS10031")
+        System.launchEboot("app0:/reboot.bin")
+    else if Controls.check(Controls.read(), SCE_CTRL_TRIANGLE) then
+        System.extractZIP("app0:/pkgpatchDEX.zip", "vs0:/app/NPXS10031")
         System.launchEboot("app0:/reboot.bin")
 	end
 	
